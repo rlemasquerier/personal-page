@@ -6,7 +6,7 @@ interface Props {
   siteTitle: string
 }
 
-const Header = ({ siteTitle }: Props) => (
+export const Header = ({ siteTitle }: Props) => (
   <header
     style={{
       background: `#00213d`,
@@ -42,5 +42,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
