@@ -20,6 +20,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@types/react-helmet": "^5.0.14",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
   },
@@ -34,8 +35,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit --skipLibCheck",
+    "test": "yarn type-check"
   },
   "repository": {
     "type": "git",
