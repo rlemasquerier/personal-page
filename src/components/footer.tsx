@@ -1,4 +1,5 @@
 import React from "react"
+import { theme } from "../theme"
 
 export const Footer = () => {
   return (
@@ -6,7 +7,7 @@ export const Footer = () => {
       <div style={style.footerTextContainer}>
         © {new Date().getFullYear()}, made with
         {` `}
-        <span style={{ color: "#43bda6" }}>❤</span>
+        <span style={{ color: theme.colors.primary }}>❤</span>
         {` with `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </div>
@@ -18,8 +19,8 @@ const style: any = {
   footerContainer: {
     height: 80,
     width: "100%",
-    background: "#00192d",
-    color: "white",
+    background: theme.colors.darkBackground,
+    color: theme.colors.text,
     textAlign: "center",
     display: "table",
   },

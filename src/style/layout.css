@@ -1,10 +1,16 @@
+:root {
+  --background-color: #fff;
+  --dark-background-color: #fff;
+  --primary-color: #fff;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background-color: #00213d;
+  background-color: var(--background-color);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,14 +49,14 @@ template {
 a {
   background-color: transparent;
   text-decoration: none;
-  color: #43bda6;
+  color: var(--primary-color);
 }
 a:active,
 a:hover {
   outline-width: 0;
 }
 a:visited {
-  color: #43bda6;
+  color: var(--primary-color);
 }
 abbr[title] {
   border-bottom: none;

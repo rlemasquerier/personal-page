@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { theme } from "../theme"
 
 interface Props {
   siteTitle: string
@@ -9,7 +10,7 @@ interface Props {
 export const Header = ({ siteTitle }: Props) => (
   <header
     style={{
-      background: `#00213d`,
+      background: theme.colors.background,
       marginBottom: `1.45rem`,
     }}
   >
@@ -23,7 +24,7 @@ export const Header = ({ siteTitle }: Props) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: theme.colors.text,
             textDecoration: `none`,
           }}
         >
