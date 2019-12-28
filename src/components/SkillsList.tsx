@@ -8,17 +8,26 @@ const style = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-  },
+    width: 400,
+  } as React.CSSProperties,
   item: {
     margin: "0.5em 1em",
-  },
+  } as React.CSSProperties,
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  } as React.CSSProperties,
 }
 
 export const SkillsList = () => (
-  <div>
+  <div style={style.container}>
     <h1>JavaScript skills</h1>
-    {skills.map((logo: Logo) => (
-      <IconLink logo={logo} />
-    ))}
+    <div style={style.list}>
+      {skills.map((logo: Logo) => (
+        <IconLink logo={logo} />
+      ))}
+    </div>
   </div>
 )
