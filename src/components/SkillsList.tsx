@@ -3,6 +3,24 @@ import { IconLink } from "./IconLink"
 import skills from "../../data/javascript_skills.json"
 import { theme } from "../theme"
 
+interface Props {
+  title: string
+  logoList: Logo[]
+}
+
+export const SkillsList = ({ logoList, title }: Props) => (
+  <div style={style.container}>
+    <h1>{title}</h1>
+    <div style={style.list}>
+      {logoList.map((logo: Logo) => (
+        <div style={{ marginBottom: theme.margins.L }}>
+          <IconLink logo={logo} />
+        </div>
+      ))}
+    </div>
+  </div>
+)
+
 const style = {
   list: {
     listStyle: "none",
@@ -21,16 +39,3 @@ const style = {
     justifyContent: "center",
   } as React.CSSProperties,
 }
-
-export const SkillsList = () => (
-  <div style={style.container}>
-    <h1>JavaScript skills</h1>
-    <div style={style.list}>
-      {skills.map((logo: Logo) => (
-        <div style={{ marginBottom: theme.margins.L }}>
-          <IconLink logo={logo} />
-        </div>
-      ))}
-    </div>
-  </div>
-)
