@@ -1,0 +1,27 @@
+[
+  {
+    "name": "AWS",
+    "src": "/aws.svg",
+    "url": ""
+  },
+  {
+    "name": "Docker",
+    "src": "/docker.svg",
+    "url": ""
+  },
+  {
+    "name": "Azure",
+    "src": "/azure.svg",
+    "url": ""
+  },
+  {
+    "name": "Jenkins",
+    "src": "/jenkins.svg",
+    "url": ""
+  },
+  {
+    "name": "Github",
+    "src": "/github.svg",
+    "url": ""
+  }
+]
