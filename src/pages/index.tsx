@@ -1,8 +1,5 @@
 import React from "react"
-
-import { Layout } from "../components/Layout"
-import { SEO } from "../components/SEO"
-import { SkillsList } from "../components/SkillsList"
+import { Layout, SEO, SkillsList } from "../components"
 
 const IndexPage = () => (
   <Layout>
