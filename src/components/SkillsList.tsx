@@ -1,6 +1,6 @@
 import React from "react"
 import { IconLink } from "./IconLink"
-import skills from "../../data/skills.json"
+import skills from "../../data/javascript_skills.json"
 
 const style = {
   list: {
