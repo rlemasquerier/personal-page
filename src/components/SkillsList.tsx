@@ -26,7 +26,9 @@ export const SkillsList = () => (
     <h1>JavaScript skills</h1>
     <div style={style.list}>
       {skills.map((logo: Logo) => (
-        <IconLink logo={logo} />
+        <div style={{ marginBottom: 30 }}>
+          <IconLink logo={logo} />
+        </div>
       ))}
     </div>
   </div>

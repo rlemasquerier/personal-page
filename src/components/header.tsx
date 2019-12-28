@@ -2,35 +2,52 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { theme } from "../theme"
+import { IconLink } from "../components"
+import socials from "../../data/social_and_contact.json"
 
 interface Props {
   siteTitle: string
 }
 
+const styles = {
+  headerContainer: {
+    background: theme.colors.background,
+    marginBottom: `1.45rem`,
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  titleContainer: {
+    padding: 20,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    color: theme.colors.text,
+    textDecoration: `none`,
+  },
+  contactContainer: {
+    padding: 20,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+}
+
 export const Header = ({ siteTitle }: Props) => (
-  <header
-    style={{
-      background: theme.colors.background,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: theme.colors.text,
-            textDecoration: `none`,
-          }}
-        >
+  <header style={styles.headerContainer}>
+    <div style={styles.titleContainer}>
+      <h1 style={{ marginBottom: 0 }}>
+        <Link to="/" style={styles.title}>
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div style={styles.contactContainer}>
+      {socials.map(logo => {
+        return <IconLink logo={logo} />
+      })}
     </div>
   </header>
 )

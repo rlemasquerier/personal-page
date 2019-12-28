@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Github",
+    "src": "/github.svg",
+    "url": ""
+  },
+  {
+    "name": "Twitter",
+    "src": "/twitter.svg",
+    "url": ""
+  },
+  {
+    "name": "Linkedin",
+    "src": "/linkedin.svg",
+    "url": ""
+  },
+  {
+    "name": "Mail",
+    "src": "/email.svg",
+    "url": ""
+  }
+]
