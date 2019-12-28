@@ -1,6 +1,7 @@
 import React from "react"
 import { IconLink } from "./IconLink"
 import skills from "../../data/javascript_skills.json"
+import { theme } from "../theme"
 
 const style = {
   list: {
@@ -26,7 +27,7 @@ export const SkillsList = () => (
     <h1>JavaScript skills</h1>
     <div style={style.list}>
       {skills.map((logo: Logo) => (
-        <div style={{ marginBottom: 30 }}>
+        <div style={{ marginBottom: theme.margins.L }}>
           <IconLink logo={logo} />
         </div>
       ))}

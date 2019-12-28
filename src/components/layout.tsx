@@ -12,9 +12,20 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Header } from "./Header"
 import { Footer } from "./Footer"
 import "../style/layout.css"
+import { theme } from "../theme"
 
 interface Props {
   children: React.ReactNode
+}
+
+const styles = {
+  mainContainer: {
+    padding: theme.margins.L,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+  } as React.CSSProperties,
 }
 
 export const Layout = ({ children }: Props) => {
@@ -37,17 +48,7 @@ export const Layout = ({ children }: Props) => {
           paddingTop: 0,
         }}
       >
-        <main
-          style={{
-            padding: 30,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          {children}
-        </main>
+        <main style={styles.mainContainer}>{children}</main>
         <Footer />
       </div>
     </>

@@ -18,7 +18,7 @@ const styles = {
     alignItems: "center",
   },
   titleContainer: {
-    padding: 20,
+    padding: theme.margins.M,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -28,7 +28,7 @@ const styles = {
     textDecoration: `none`,
   },
   contactContainer: {
-    padding: 20,
+    padding: theme.margins.M,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
