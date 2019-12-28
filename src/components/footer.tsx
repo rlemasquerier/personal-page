@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer style={style.footerContainer}>
       <div style={style.footerTextContainer}>
-        © {new Date().getFullYear()}, made with
+        © {new Date().getFullYear()} - Rodolphe Lemasquerier - Made with
         {` `}
         <span style={{ color: theme.colors.primary }}>❤</span>
         {` with `}
