@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { Header } from "./header"
-import { Footer } from "./footer"
+import { Header } from "./Header"
+import { Footer } from "./Footer"
 import "./layout.css"
 
 interface Props {
@@ -34,7 +34,6 @@ export const Layout = ({ children }: Props) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
           paddingTop: 0,
         }}
       >
