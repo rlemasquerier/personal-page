@@ -1,8 +1,8 @@
-import React from "react"
-import { theme } from "../theme"
+import React from "react";
+import { theme } from "../theme";
 
 interface Props {
-  logo: Logo
+  logo: Logo;
 }
 
 export const IconLink = ({ logo }: Props) => {
@@ -14,5 +14,5 @@ export const IconLink = ({ logo }: Props) => {
         logo.name
       )}
     </a>
-  )
-}
+  );
+};

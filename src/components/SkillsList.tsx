@@ -1,11 +1,10 @@
-import React from "react"
-import { IconLink } from "./IconLink"
-import skills from "../../data/javascript_skills.json"
-import { theme } from "../theme"
+import React from "react";
+import { IconLink } from "./IconLink";
+import { theme } from "../theme";
 
 interface Props {
-  title: string
-  logoList: Logo[]
+  title: string;
+  logoList: Logo[];
 }
 
 export const SkillsList = ({ logoList, title }: Props) => (
@@ -19,7 +18,7 @@ export const SkillsList = ({ logoList, title }: Props) => (
       ))}
     </div>
   </div>
-)
+);
 
 const style = {
   list: {
@@ -38,4 +37,4 @@ const style = {
     alignItems: "center",
     justifyContent: "center",
   } as React.CSSProperties,
-}
+};

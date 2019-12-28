@@ -5,17 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import { Header } from "./Header"
-import { Footer } from "./Footer"
-import "../style/layout.css"
-import { theme } from "../theme"
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import "../style/layout.css";
+import { theme } from "../theme";
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const styles = {
@@ -26,7 +26,7 @@ const styles = {
     justifyContent: "center",
     flexDirection: "column",
   } as React.CSSProperties,
-}
+};
 
 export const Layout = ({ children }: Props) => {
   const data = useStaticQuery(graphql`
@@ -37,7 +37,7 @@ export const Layout = ({ children }: Props) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -52,9 +52,9 @@ export const Layout = ({ children }: Props) => {
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};

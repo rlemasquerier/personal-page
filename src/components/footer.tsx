@@ -1,5 +1,5 @@
-import React from "react"
-import { theme } from "../theme"
+import React from "react";
+import { theme } from "../theme";
 
 export const Footer = () => {
   return (
@@ -12,8 +12,8 @@ export const Footer = () => {
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 const style: any = {
   footerContainer: {
@@ -28,4 +28,4 @@ const style: any = {
     display: "table-cell",
     verticalAlign: "middle",
   },
-}
+};

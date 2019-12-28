@@ -1,12 +1,12 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import { theme } from "../theme"
-import { IconLink } from "../components"
-import socials from "../../data/social_and_contact.json"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import { theme } from "../theme";
+import { IconLink } from "../components";
+import socials from "../../data/social_and_contact.json";
 
 interface Props {
-  siteTitle: string
+  siteTitle: string;
 }
 
 const styles = {
@@ -33,7 +33,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
   },
-}
+};
 
 export const Header = ({ siteTitle }: Props) => (
   <header style={styles.headerContainer}>
@@ -46,16 +46,16 @@ export const Header = ({ siteTitle }: Props) => (
     </div>
     <div style={styles.contactContainer}>
       {socials.map(logo => {
-        return <IconLink logo={logo} />
+        return <IconLink logo={logo} />;
       })}
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};

@@ -3,4 +3,4 @@ export const colors = {
   darkBackground: "#00192d",
   primary: "#43bda6",
   text: "#fff",
-}
+};

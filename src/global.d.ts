@@ -1,5 +1,5 @@
 interface Logo {
-  name: string
-  src: string
-  url: string
+  name: string;
+  src: string;
+  url: string;
 }

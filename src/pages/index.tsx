@@ -1,7 +1,7 @@
-import React from "react"
-import { Layout, SEO, SkillsList } from "../components"
-import jsSkills from "../../data/javascript_skills.json"
-import devopSkills from "../../data/devops_skills.json"
+import React from "react";
+import { Layout, SEO, SkillsList } from "../components";
+import jsSkills from "../../data/javascript_skills.json";
+import devopSkills from "../../data/devops_skills.json";
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +11,6 @@ const IndexPage = () => (
     <SkillsList title="JavaScript Stack" logoList={jsSkills} />
     <SkillsList title="DevOps" logoList={devopSkills} />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
