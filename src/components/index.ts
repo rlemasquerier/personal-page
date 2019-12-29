@@ -5,3 +5,4 @@ export { Image } from "./Image";
 export { Layout } from "./Layout";
 export { SEO } from "./SEO";
 export { SkillsList } from "./SkillsList";
+export { MainAnimation } from "./MainAnimation";
