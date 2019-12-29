@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactBodymovin from "react-bodymovin";
 import animation from "../assets/animations/office.json";
 
@@ -13,9 +13,13 @@ const bodymovinOptions = {
 const ANIMATION_SIZE = 350;
 
 export const MainAnimation = () => {
+  const [componentIsLoaded, setComponentIsLoaded] = useState(false);
+  useEffect(() => {
+    setComponentIsLoaded(true);
+  }, []);
   return (
     <div style={{ height: ANIMATION_SIZE, width: ANIMATION_SIZE }}>
-      <ReactBodymovin options={bodymovinOptions} />
+      {componentIsLoaded && <ReactBodymovin options={bodymovinOptions} />}
     </div>
   );
 };
