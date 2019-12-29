@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.14",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
   },
@@ -37,7 +38,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit --skipLibCheck",
-    "test": "yarn type-check"
+    "test": "yarn type-check",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
