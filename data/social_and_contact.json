@@ -2,21 +2,21 @@
   {
     "name": "Github",
     "src": "/github.svg",
-    "url": ""
+    "url": "https://github.com/rlemasquerier"
   },
   {
     "name": "Twitter",
     "src": "/twitter.svg",
-    "url": ""
+    "url": "https://twitter.com/rlemasquerier"
   },
   {
     "name": "Linkedin",
     "src": "/linkedin.svg",
-    "url": ""
+    "url": "https://www.linkedin.com/in/rodolphe-lemasquerier-12618ba3/"
   },
   {
     "name": "Mail",
     "src": "/email.svg",
-    "url": ""
+    "url": "mailto:rodolphe.lemasquerier@gmail.com"
   }
 ]

@@ -2,26 +2,26 @@
   {
     "name": "AWS",
     "src": "/aws.svg",
-    "url": ""
+    "url": "https://aws.amazon.com/fr/"
   },
   {
     "name": "Docker",
     "src": "/docker.svg",
-    "url": ""
+    "url": "https://www.docker.com/"
   },
   {
     "name": "Azure",
     "src": "/azure.svg",
-    "url": ""
+    "url": "https://azure.microsoft.com"
   },
   {
     "name": "Jenkins",
     "src": "/jenkins.svg",
-    "url": ""
+    "url": "https://jenkins.io/"
   },
   {
     "name": "Github",
     "src": "/github.svg",
-    "url": ""
+    "url": "https://github.com/"
   }
 ]
