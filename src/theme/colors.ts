@@ -14,5 +14,6 @@ export const colors = {
   darkBackground: palette.nightBlue,
   primary: palette.caribbeanGreen,
   innerBulletPoint: palette.paleSpringBud,
+  subtitle: palette.persianGreen,
   text: palette.white,
 };
