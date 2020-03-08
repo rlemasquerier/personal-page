@@ -46,7 +46,7 @@ export const Header = ({ siteTitle }: Props) => (
     </div>
     <div style={styles.contactContainer}>
       {socials.map(logo => {
-        return <IconLink logo={logo} />;
+        return <IconLink key={logo.name} logo={logo} />;
       })}
     </div>
   </header>

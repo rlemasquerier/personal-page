@@ -12,7 +12,7 @@ export const SkillsList = ({ logoList, title }: Props) => (
     <h1>{title}</h1>
     <div style={style.list}>
       {logoList.map((logo: Logo) => (
-        <div style={{ marginBottom: theme.margins.L }}>
+        <div key={logo.name} style={{ marginBottom: theme.margins.L }}>
           <IconLink logo={logo} />
         </div>
       ))}
