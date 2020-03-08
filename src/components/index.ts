@@ -6,3 +6,4 @@ export { Layout } from "./Layout";
 export { SEO } from "./SEO";
 export { SkillsList } from "./SkillsList";
 export { MainAnimation } from "./MainAnimation";
+export { ExperiencesList } from "./ExperiencesList";
