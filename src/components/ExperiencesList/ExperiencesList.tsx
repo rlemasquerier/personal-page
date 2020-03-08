@@ -16,7 +16,9 @@ interface Experience {
 export const ExperiencesList = () => {
   const data = useStaticQuery(graphql`
     query ExperiencesQuery {
-      experiences: allMarkdownRemark {
+      experiences: allMarkdownRemark(
+        sort: { order: DESC, fields: [fileAbsolutePath] }
+      ) {
         edges {
           node {
             html
