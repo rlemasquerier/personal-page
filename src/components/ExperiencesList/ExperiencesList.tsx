@@ -1,26 +1,45 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import { theme } from "../../theme";
 import { ListItem } from "../ListItem";
 
 interface Experience {
-  title: string;
-  dates: string;
-  description: string;
+  node: {
+    frontmatter: {
+      title: string;
+      date: string;
+    };
+    html: string;
+  };
 }
 
-interface Props {
-  experiences: Experience[];
-}
-
-export const ExperiencesList = (props: Props) => {
+export const ExperiencesList = () => {
+  const data = useStaticQuery(graphql`
+    query ExperiencesQuery {
+      experiences: allMarkdownRemark {
+        edges {
+          node {
+            html
+            frontmatter {
+              title
+              date
+            }
+          }
+        }
+      }
+    }
+  `);
+  const experiences = data.experiences.edges;
   return (
     <div style={styles.container}>
-      {props.experiences.map(experience => (
-        <ListItem>
+      {experiences.map((experience: Experience) => (
+        <ListItem key={experience.node.frontmatter.title}>
           <div style={{ width: "100%", marginRight: theme.margins.L }}>
-            <h2 style={{ marginBottom: 0 }}>{experience.title}</h2>
-            <p style={styles.dates}>{experience.dates}</p>
-            <p>{experience.description}</p>
+            <h2 style={{ marginBottom: 0 }}>
+              {experience.node.frontmatter.title}
+            </h2>
+            <p style={styles.dates}>{experience.node.frontmatter.date}</p>
+            <div dangerouslySetInnerHTML={{ __html: experience.node.html }} />
           </div>
         </ListItem>
       ))}
