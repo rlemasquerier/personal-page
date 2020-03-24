@@ -16,6 +16,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    flexWrap: "wrap" as "wrap",
   },
   titleContainer: {
     padding: theme.margins.M,
