@@ -5,10 +5,11 @@ import { theme } from "../theme";
 interface Props {
   title: string;
   logoList: Logo[];
+  className?: string;
 }
 
-export const SkillsList = ({ logoList, title }: Props) => (
-  <div style={style.container}>
+export const SkillsList = ({ logoList, title, className }: Props) => (
+  <div style={style.container} className={className}>
     <h1>{title}</h1>
     <div style={style.list}>
       {logoList.map((logo: Logo) => (

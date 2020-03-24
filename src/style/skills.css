@@ -1,0 +1,75 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills-js {
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.mainAnimation {
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.skills-devops {
+  justify-self: center;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+@media (max-width: 1200px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .skills-js {
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .mainAnimation {
+    justify-self: center;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .skills-devops {
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .skills-js {
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .mainAnimation {
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .skills-devops {
+    justify-self: center;
+    grid-row: 3;
+    grid-column: 1;
+  }
+}

@@ -12,13 +12,20 @@ const bodymovinOptions = {
 
 const ANIMATION_SIZE = 350;
 
-export const MainAnimation = () => {
+interface Props {
+  className?: string;
+}
+
+export const MainAnimation = ({ className }: Props) => {
   const [componentIsLoaded, setComponentIsLoaded] = useState(false);
   useEffect(() => {
     setComponentIsLoaded(true);
   }, []);
   return (
-    <div style={{ height: ANIMATION_SIZE, width: ANIMATION_SIZE }}>
+    <div
+      style={{ height: ANIMATION_SIZE, width: ANIMATION_SIZE }}
+      className={className}
+    >
       {componentIsLoaded && <ReactBodymovin options={bodymovinOptions} />}
     </div>
   );

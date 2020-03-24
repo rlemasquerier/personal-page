@@ -26,10 +26,18 @@ const IndexPage = () => {
           and efficiently while keeping code quality as a top priority.{" "}
         </p>
       </div>
-      <div style={styles.skillsContainer}>
-        <SkillsList title="JavaScript Fullstack" logoList={jsSkills} />
-        <MainAnimation />
-        <SkillsList title="DevOps" logoList={devopSkills} />
+      <div style={styles.skillsContainer} className="skills">
+        <SkillsList
+          title="JavaScript Fullstack"
+          logoList={jsSkills}
+          className="skills-js"
+        />
+        <MainAnimation className="mainAnimation" />
+        <SkillsList
+          title="DevOps"
+          logoList={devopSkills}
+          className="skills-devops"
+        />
       </div>
       <ExperiencesList />
     </Layout>
@@ -43,10 +51,7 @@ interface Styles {
 
 const styles: Styles = {
   skillsContainer: {
-    display: "flex",
     width: "100%",
-    alignItems: "center",
-    justifyContent: "space-around",
   },
   welcomeContainer: {
     display: "flex",

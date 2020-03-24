@@ -11,8 +11,10 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import "../style/layout.css";
 import { theme } from "../theme";
+
+import "../style/layout.css";
+import "../style/skills.css";
 
 interface Props {
   children: React.ReactNode;
