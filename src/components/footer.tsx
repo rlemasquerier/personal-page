@@ -3,7 +3,7 @@ import { theme } from "../theme";
 
 export const Footer = () => {
   return (
-    <footer style={style.footerContainer}>
+    <footer style={style.footerContainer} id="footer">
       <div style={style.footerTextContainer}>
         © {new Date().getFullYear()} - Rodolphe Lemasquerier - Made with
         {` `}

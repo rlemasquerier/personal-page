@@ -37,7 +37,7 @@ const styles = {
 };
 
 export const Header = ({ siteTitle }: Props) => (
-  <header style={styles.headerContainer}>
+  <header style={styles.headerContainer} id="header">
     <div style={styles.titleContainer}>
       <h1 style={{ marginBottom: 0 }}>
         <Link to="/" style={styles.title}>
