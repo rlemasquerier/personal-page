@@ -3,7 +3,7 @@ import React from "react";
 import { Layout, SEO } from "../../components";
 
 const PrivacyPolicyPage = () => (
-  <Layout>
+  <Layout hideHeader hideFooter>
     <SEO title="Privacy Policy" />
     <h1>Politique de confidentialité relative à l'application Pet Feeder</h1>
     <h2>Utilisation de l'appareil photo</h2>

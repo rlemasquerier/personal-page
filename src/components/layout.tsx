@@ -18,6 +18,8 @@ import "../style/skills.css";
 
 interface Props {
   children: React.ReactNode;
+  hideHeader?: boolean;
+  hideFooter?: boolean;
 }
 
 const styles = {
@@ -30,7 +32,7 @@ const styles = {
   } as React.CSSProperties,
 };
 
-export const Layout = ({ children }: Props) => {
+export const Layout = ({ children, hideFooter, hideHeader }: Props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,7 +45,7 @@ export const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {!hideHeader && <Header siteTitle={data.site.siteMetadata.title} />}
       <div
         style={{
           margin: `0 auto`,
@@ -51,7 +53,7 @@ export const Layout = ({ children }: Props) => {
         }}
       >
         <main style={styles.mainContainer}>{children}</main>
-        <Footer />
+        {!hideFooter && <Footer />}
       </div>
     </>
   );
