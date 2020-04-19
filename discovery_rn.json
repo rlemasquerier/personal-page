@@ -1,0 +1,10 @@
+{
+  "applications": [
+    {
+      "appId": "rndemo",
+      "description": "This is the RN demo app of the DP-3T SDK",
+      "backendBaseUrl": "https://demo.dpppt.org/",
+      "contact": "rodolphe.lemasquerier@gmail.com"
+    }
+  ]
+}
