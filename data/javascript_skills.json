@@ -36,6 +36,11 @@
     "url": "https://www.mongodb.com/"
   },
   {
+    "name": "Nest",
+    "src": "/nestjs.svg",
+    "url": "https://nestjs.com/"
+  },
+  {
     "name": "GraphQL",
     "src": "/graphql.svg",
     "url": "http://graphql.org/"
