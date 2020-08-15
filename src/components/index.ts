@@ -7,3 +7,4 @@ export { SEO } from "./SEO";
 export { SkillsList } from "./SkillsList";
 export { MainAnimation } from "./MainAnimation";
 export { ExperiencesList } from "./ExperiencesList";
+export { Post } from "./post";
