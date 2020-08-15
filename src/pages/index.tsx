@@ -5,6 +5,7 @@ import {
   SkillsList,
   MainAnimation,
   ExperiencesList,
+  Post,
 } from "../components";
 import jsSkills from "../../data/javascript_skills.json";
 import devopSkills from "../../data/devops_skills.json";
@@ -38,6 +39,12 @@ const IndexPage = () => {
           className="skills-devops"
         />
       </div>
+      <h1>Posts</h1>
+      <Post
+        url="https://dev.to/rlemasquerier/learn-swift-from-the-standard-library-a-deep-dive-example-3045"
+        imageName="gear.png"
+      />
+      <h1>Experiences</h1>
       <ExperiencesList />
     </Layout>
   );
