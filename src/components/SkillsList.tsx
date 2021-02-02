@@ -27,7 +27,7 @@ const style = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    width: 400,
+    maxWidth: 400,
   } as React.CSSProperties,
   item: {
     margin: "0.5em 1em",
