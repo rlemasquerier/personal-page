@@ -1,5 +1,5 @@
 ---
-date: Since November 2018
+date: November 2018 - December 2020
 title: Fullstack developer - BAM
 ---
 
